@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import Greeter from './components/Greeter';
+import Counter from './components/Counter.jsx';
+import Lists from './components/Lists.jsx';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>React Try {props.message}</h1>
+      
+      <Greeter name={'whatsitoya'}></Greeter> 
+
+      <Greeter name={'wadup'}></Greeter>
+
+      <Counter></Counter>
+
+      <Lists></Lists>
+      
+    </>
   );
 }
 

@@ -8,6 +8,7 @@ This repo was built to try react in simplest way and apply basic point in it, th
 - Event listener
 - List
 - Simple testing
+- Build
 
 ## Available Scripts
 
