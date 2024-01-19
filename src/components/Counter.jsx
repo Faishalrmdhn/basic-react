@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 function Counter() {
   let [count, setCount] = useState(0)
+
   const incCounter =()=>{
     return setCount(count+1)
   } 
@@ -11,9 +12,12 @@ function Counter() {
   }
   return (
     <>
-        <button onClick={incCounter}>+</button>
-        <p>{count}</p>
-        <button onClick={decCounter}>-</button>
+      <div>
+        <button style={{marginRight:'1rem'}} onClick={incCounter}>+</button>
+        {count}
+        <button style={{marginLeft:'1rem'}} onClick={decCounter}>-</button>
+      </div>
+        {/* <p>{count}</p> */}
     </>
   )
 }
